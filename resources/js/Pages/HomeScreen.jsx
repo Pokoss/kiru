@@ -36,7 +36,7 @@ function HomeScreen() {
       <Carousel loop='true' autoplay='true' transition={{ duration: 2 }} className="h-[630px]">
         <div className="relative h-full w-full">
           <img
-            src="/images/gallery/kiru-01.JPG"
+            src="/images/gallery/kiru-01.jpg"
             alt="image 1"
             className="h-full w-full object-cover"
           />
@@ -72,7 +72,7 @@ function HomeScreen() {
         </div>
         <div className="relative h-full w-full">
           <img
-            src="/images/gallery/kiru-02.JPG"
+            src="/images/gallery/kiru-02.jpg"
             alt="image 2"
             className="h-full w-full object-cover"
           />
@@ -105,7 +105,7 @@ function HomeScreen() {
         </div>
         <div className="relative h-full w-full">
           <img
-            src="/images/gallery/kiru-06.JPG"
+            src="/images/gallery/kiru-06.jpg"
             alt="image 3"
             className="h-full w-full object-cover"
           />
@@ -138,7 +138,7 @@ function HomeScreen() {
         </div>
         <div className="relative h-full w-full">
           <img
-            src="/images/gallery/kiru-03.JPG"
+            src="/images/gallery/kiru-03.jpg"
             alt="image 3"
             className="h-full w-full object-cover"
           />
@@ -207,7 +207,7 @@ function HomeScreen() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-white p-12 md:p-24 flex justify-end items-center">
           <a href="" data-aos='fade-right'>
-            <img src="/images/gallery/kiru-02.JPG" className="w-full max-w-md" />
+            <img src="/images/gallery/kiru-02.jpg" className="w-full max-w-md" />
           </a>
         </div>
         <div className="bg-gray-100 p-12 md:p-24 flex justify-start items-center">
@@ -229,7 +229,7 @@ function HomeScreen() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-white p-12 md:p-24 flex justify-start items-center">
           <a href="" data-aos='fade-left'>
-            <img src="/images/gallery/kiru-06.JPG" className="w-full max-w-md" />
+            <img src="/images/gallery/kiru-06.jpg" className="w-full max-w-md" />
           </a>
         </div>
         <div className="md:order-first bg-gray-100 p-12 md:p-24 flex justify-end items-center">
@@ -250,7 +250,7 @@ function HomeScreen() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-white p-12 md:p-24 flex justify-end items-center">
           <a href="" data-aos='fade-right'>
-            <img src="/images/gallery/kiru-03.JPG" className="w-full max-w-md" />
+            <img src="/images/gallery/kiru-03.jpg" className="w-full max-w-md" />
           </a>
         </div>
         <div className="bg-gray-100 p-12 md:p-24 flex justify-start items-center">
@@ -378,7 +378,7 @@ function HomeScreen() {
       <section className="mb-32 text-gray-800">
 
         <div className="relative overflow-hidden h-96 bg-no-repeat bg-cover"
-          style={{ backgroundPosition: '50%', backgroundImage: "url('/images/gallery/kiru-09.JPG')", backgroundAttachment: 'fixed', backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
+          style={{ backgroundPosition: '50%', backgroundImage: "url('/images/gallery/kiru-09.jpg')", backgroundAttachment: 'fixed', backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
         >
           <div className="max-w-xl mx-auto text-center pt-10 md:py-10 animate-fade-up">
             <div className="w-24 h-2 bg-primary mb-4 mx-auto"></div>

@@ -138,7 +138,7 @@ function HomeScreen() {
         </div>
         <div className="relative h-full w-full">
           <img
-            src="/images/gallery/kiru-03.jpg"
+            src={'/images/gallery/kiru-03.jpg'}
             alt="image 3"
             className="h-full w-full object-cover"
           />
@@ -250,7 +250,7 @@ function HomeScreen() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-white p-12 md:p-24 flex justify-end items-center">
           <a href="" data-aos='fade-right'>
-            <img src="/images/gallery/kiru-03.jpg" className="w-full max-w-md" />
+            <img src={'/images/gallery/kiru-03.jpg'} className="w-full max-w-md" />
           </a>
         </div>
         <div className="bg-gray-100 p-12 md:p-24 flex justify-start items-center">

@@ -7,6 +7,7 @@ import '@splidejs/react-splide/css';
 import Footer from '@/Component/Footer';
 import { Link } from '@inertiajs/react';
 import Events from '@/Component/Events';
+import Layout from '@/Component/Layout';
 function HomeScreen() {
   const testimonials = [
     {
@@ -32,7 +33,6 @@ function HomeScreen() {
 
   return (
     <div>
-      <NavbarHome />
       <Carousel loop='true' autoplay='true' transition={{ duration: 2 }} className="h-[630px]">
         <div className="relative h-full w-full">
           <img
@@ -220,7 +220,7 @@ function HomeScreen() {
             </Typography>
             {/* </p> */}
             <Typography>
-              <a href="https://shopkeeper.lehub.dev" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest item-left py-3 px-8 hover:bg-primary hover:text-white">View</a>
+              <Link href="/road-and-drainage" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest item-left py-3 px-8 hover:bg-primary hover:text-white">View</Link>
             </Typography>
           </div>
         </div>
@@ -239,7 +239,7 @@ function HomeScreen() {
             {/* <p className="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed"> */}
             <Typography>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellendus et vitae saepe cupiditate error nam ducimus aspernatur, at officia impedit, ipsam, sed inventore quidem rerum. Illum, eveniet. Labore, sint?
-              <a href="/mobile-app-development" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">Inquire more</a>
+              <Link href="/buildings" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">Inquire more</Link>
               {/* </p> */}
               {/* <a href="" className="inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">Book Custom Package</a> */}
             </Typography>
@@ -263,7 +263,7 @@ function HomeScreen() {
             </Typography>
             {/* </p> */}
             <Typography>
-              <a href="/website-design" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">Contact</a>
+              <Link href="/water-and-sanitation" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">Contact</Link>
             </Typography>
           </div>
         </div>
@@ -319,7 +319,7 @@ function HomeScreen() {
 
           </div>
           <div className='flex w-full justify-center mr-3 mt-7'>
-            <Link href="/events" className="inline-block border-2 border-primary font-semibold text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">More Projects</Link>
+            <Link href="/projectlist" className="inline-block border-2 border-primary font-semibold text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">More Projects</Link>
           </div>
         </div>
       </div>
@@ -507,9 +507,12 @@ function HomeScreen() {
         </div>
 
       </section>
-      <Footer />
+      <div className="map-container">
+       
+      </div>
     </div>
+
   )
 }
-
+HomeScreen.layout = page => <Layout children={page} />
 export default HomeScreen

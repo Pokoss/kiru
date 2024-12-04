@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use function Termwind\render;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,4 +36,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/buildings', fn() => Inertia::render('BuildingConstructionScreen'));
+Route::get('/water-and-sanitation', fn() => Inertia::render('WaterConstructionScreen'));
+Route::get('/road-and-drainage', fn() => Inertia::render('RoadConstructionScreen'));
+Route::get('/equipment', fn() => Inertia::render('EquipmentScreen'));
+Route::get('/gallery', fn() => Inertia::render('GalleryScreen'));
+Route::get('/projectlist', fn() => Inertia::render('ProjectlistScreen'));
+Route::get('/aboutus', fn() => Inertia::render('AboutScreen'));
+Route::get('/careers', fn() => Inertia::render('CareersScreen'));
 require __DIR__.'/auth.php';

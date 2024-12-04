@@ -5,7 +5,7 @@ import { Link } from '@inertiajs/react';
 function Events({event}) {
     
   return (
-    <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+    <div className=" overflow-hidden transition-shadow duration-300 bg-white rounded shadow-2xl shadow-gray-300">
             <img
               src={'/images/gallery/kiru-03.jpg'}
               className="object-cover w-full h-64"
@@ -30,12 +30,7 @@ function Events({event}) {
                 {'Bweyogerere - Bukasa Road'}
               </span>
              
-              <span
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-primary"
-              >
-                Learn more
-              </span>
+              
             </div>
           </div>
   )

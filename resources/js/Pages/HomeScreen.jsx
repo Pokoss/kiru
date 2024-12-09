@@ -318,7 +318,7 @@ function HomeScreen() {
 
       {/* Events and Travel Section Section*/}
       {/* {events && events.length > 0 && */}
-      <div style={{ backgroundImage: 'url("/images/gallery/kiru-02.jpg")', backgroundAttachment: 'fixed', backgroundSize: "cover", backgroundRepeat: "no-repeat" }} >
+      <div style={{ backgroundImage: 'url("/images/gallery/kiru-02.JPG")', backgroundAttachment: 'fixed', backgroundSize: "cover", backgroundRepeat: "no-repeat" }} >
         <div className="pt-6 max-w-xl mx-auto text-center" data-aos='fade-down'>
           <div className="w-24 h-2 bg-primary mb-4 mx-auto "></div>
           <h3 className=" text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-secondary ">

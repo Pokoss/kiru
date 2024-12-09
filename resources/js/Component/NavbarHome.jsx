@@ -43,7 +43,7 @@ function NavbarHome() {
 
                         <div className="lg:hidden">
                             <button
-                                className="p-2 text-gray-50 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 text-gray-900 rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (

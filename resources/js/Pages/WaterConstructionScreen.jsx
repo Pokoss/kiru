@@ -33,7 +33,9 @@ function WaterConstructionScreen() {
                       </div>
                          
                       <p className="my-5">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum minus assumenda, error, quis ullam a fugit velit corrupti molestias explicabo reiciendis? Quibusdam, quas veritatis quae nobis distinctio officiis officia libero.
+                      Reliable water infrastructure is the backbone of any thriving community or development project. At Kiru General Services, we specialize in designing, constructing, and maintaining water systems that ensure the efficient delivery and management of water resources.
+
+Our services include the installation of pipelines, construction of reservoirs, and development of water treatment facilities. With a focus on sustainability and innovation, we create water solutions that meet the needs of today while preserving resources for future generations. Trust us to provide dependable water works that support growth and improve lives.
                       </p>
                       <form onSubmit={handleSubmit} className="self-stretch ng-untouched ng-pristine ng-valid">
                           <div>

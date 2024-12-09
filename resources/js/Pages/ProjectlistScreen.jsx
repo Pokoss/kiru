@@ -3,6 +3,28 @@ import Layout from '@/Component/Layout'
 import React from 'react'
 
 function ProjectlistScreen() {
+
+  const projects =[
+    {
+      'title':'Busega',
+      'progress':'Ongoing',
+      'type':'ROAD',
+      'imageurl':'/images/projects/busega.jpg',
+    },
+    {
+      'title':'Mukono ODP',
+      'progress':'Complete',
+      'type':'Buliding',
+      'imageurl':'/images/projects/mukono-odp.jpg',
+    },
+    {
+      'title':'Kizanyiro',
+      'progress':'Complete',
+      'type':'ROAD',
+      'imageurl':'/images/projects/kizanyiro-road.jpg',
+    },
+  ] 
+
   return (
     <div>
       <div className="pt-6 max-w-xl mx-auto text-center" data-aos='fade-down'>
@@ -13,17 +35,9 @@ function ProjectlistScreen() {
       </div>
 
       <div className="p-5 grid gap-8 lg:grid-cols-3 md:grid-cols-2 md:max-w-full sm:max-w-sm sm:mx-auto lg:max-w-full">
-        {/* {events && events.map((event, index) => (
-                <Link key={index} href='/events/viewevent'>
-                </Link>
-                ))} */}
-
-        <Events />
-        <Events />
-        <Events />
-        <Events />
-        <Events />
-        <Events />
+        {projects && projects.map((project, index) => (
+                <Events project={project}/>
+                ))}
       </div>
     </div>
   )

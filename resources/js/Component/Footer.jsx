@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react'
 import { Button } from '@material-tailwind/react'
 import React from 'react'
 
@@ -17,12 +18,10 @@ function Footer() {
             </a>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-gray-50">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+              Kiru General Services is a leading construction company specializing in roads, buildings, and water works.
               </p>
               <p className="mt-4 text-sm text-gray-50">
-                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.
+              With a commitment to quality, safety, and sustainability, we deliver infrastructure solutions that drive progress and transform communities.
               </p>
             </div>
           </div>
@@ -38,7 +37,7 @@ function Footer() {
                 title="Our phone"
                 className="transition-colors duration-300 text-gray-100 hover:text-deep-purple-800"
               >
-                +256 312 456 789
+                +256 (0) 414 289 803 <br/> +256 (0) 414 574 505<br/>+256 (0) 772 401 781<br/>+256 (0) 752 401 781
               </a>
             </div>
             <div className="flex">
@@ -62,7 +61,7 @@ function Footer() {
                 title="Our address"
                 className="transition-colors duration-300 text-gray-100 hover:text-deep-purple-800"
               >
-                Kampala, Uganda
+                Plot 2568 Nsubuga Kakembo Drive, Buye - Ntinda
               </a>
             </div>
           </div>
@@ -71,14 +70,16 @@ function Footer() {
               Management
             </span>
             <div className="flex items-center mt-1 space-x-3">
+              <Link href='/login'>
               <Button color='white'>
                 Login Admin
               </Button>
+              </Link>
             </div>
-            <p className="mt-4 text-sm text-gray-50">
+            {/* <p className="mt-4 text-sm text-gray-50">
               Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
               spare ribs salami.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">

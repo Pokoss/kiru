@@ -4,7 +4,6 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
 import TestimonialCard from '@/Component/TestimonialCard';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-import Footer from '@/Component/Footer';
 import { Link } from '@inertiajs/react';
 import Events from '@/Component/Events';
 import Layout from '@/Component/Layout';
@@ -12,24 +11,47 @@ function HomeScreen() {
   const testimonials = [
     {
       'id': '1',
-      'title': 'Kiru made my house',
-      'name': 'Kagwa Mike',
-      'content': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione reprehenderit maxime illo dolorem recusandae voluptas soluta hic sapiente reiciendis neque natus doloremque molestias, laudantium itaque harum ab libero numquam.',
+      'title': 'Exceptional Road Construction',
+      'name': 'John K., Local Council Representative',
+      'content': 'Kiru General Services exceeded our expectations by delivering a high-quality road that has greatly improved accessibility in our community. Their professionalism and efficiency were remarkable.',
     },
     {
       'id': '2',
-      'title': 'I love Kiru',
-      'name': 'Mulondo Yafessi',
-      'content': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione reprehenderit maxime illo dolorem recusandae voluptas soluta hic sapiente reiciendis neque natus doloremque molestias, laudantium itaque harum ab libero numquam.',
+      'title': 'Reliable Building Partner',
+      'name': 'Sarah M., Business Owner',
+      'content': 'Working with Kiru General Services was a seamless experience. They built our office block on time and within budget, with an exceptional finish that impressed us all',
     },
     {
       'id': '3',
-      'title': 'They made my dream come true',
-      'name': 'Sigwe Yafessi',
-      'content': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione reprehenderit maxime illo dolorem recusandae voluptas soluta hic sapiente reiciendis neque natus doloremque molestias, laudantium itaque harum ab libero numquam.',
+      'title': 'Sustainable Water Solutions',
+      'name': 'David O., Community Leader',
+      'content': 'The water system installed by Kiru General Services has transformed our village. Clean water is now easily accessible, and the community couldnt be more grateful.',
     },
 
   ]
+
+  const projects =[
+
+    {
+      'title':'Busega',
+      'progress':'Ongoing',
+      'type':'ROAD',
+      'imageurl':'/images/projects/busega.jpg',
+    },
+    {
+      'title':'Mukono ODP',
+      'progress':'Complete',
+      'type':'Buliding',
+      'imageurl':'/images/projects/mukono-odp.jpg',
+    },
+    {
+      'title':'Kizanyiro',
+      'progress':'Complete',
+      'type':'ROAD',
+      'imageurl':'/images/projects/kizanyiro-road.jpg',
+    },
+  ] 
+  
 
   return (
     <div>
@@ -40,7 +62,7 @@ function HomeScreen() {
             alt="image 1"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/50">
             <div className="w-3/4 text-center md:w-2/4 animate-fade-up">
               <Typography
                 variant="h1"
@@ -54,15 +76,14 @@ function HomeScreen() {
                 color="white"
                 className="mb-12 opacity-80"
               >
-                It is not so much for its beauty that the forest makes a claim
-                upon men&apos;s hearts, as for that subtle something, that quality
-                of air that emanation from old trees, that so wonderfully changes
-                and renews a weary spirit.
+                Your trusted partner in delivering innovative and sustainable infrastructure solutions. At Kiru General Services, we specialize in roads, buildings, and water works, transforming visions into reality with unmatched quality and precision
               </Typography>
               <div className="flex justify-center gap-2">
+                <Link href='/aboutus'>
                 <Button size="lg" color="white">
                   About Us
                 </Button>
+                </Link>
                 <Button className='animate-bounce hover:motion-safe:animate-spin' size="lg" color="white" variant="text">
                   Contact Us
                 </Button>
@@ -76,7 +97,7 @@ function HomeScreen() {
             alt="image 2"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
+          <div className="absolute inset-0 grid h-full w-full items-center bg-black/50">
             <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32">
               <Typography
                 variant="h1"
@@ -90,7 +111,7 @@ function HomeScreen() {
                 color="white"
                 className="mb-12 opacity-80"
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero possimus suscipit ut cupiditate laudantium assumenda sint adipisci nemo doloremque sunt provident ipsam, ducimus
+                Building pathways to progress with durable roads and efficient drainage systems. Kiru General Services combines expertise and innovation to deliver infrastructure that enhances connectivity and resilience.
               </Typography>
               <div className="flex gap-2">
                 <Button size="lg" color="white">
@@ -109,7 +130,7 @@ function HomeScreen() {
             alt="image 3"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
+          <div className="absolute inset-0 grid h-full w-full items-end bg-black/50">
             <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32">
               <Typography
                 variant="h1"
@@ -123,7 +144,7 @@ function HomeScreen() {
                 color="white"
                 className="mb-12 opacity-80"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem totam architecto sint facilis debitis necessitatibus illo magni, quasi assumenda commodi explicabo dolore?
+                Transforming visions into reality with innovative building solutions. Kiru General Services delivers high-quality residential, commercial, and industrial construction projects that stand the test of time.
               </Typography>
               <div className="flex gap-2">
                 <Button size="lg" color="white">
@@ -142,7 +163,7 @@ function HomeScreen() {
             alt="image 3"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
+          <div className="absolute inset-0 grid h-full w-full items-end bg-black/50">
             <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32">
               <Typography
                 variant="h1"
@@ -156,7 +177,7 @@ function HomeScreen() {
                 color="white"
                 className="mb-12 opacity-80"
               >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, sequi quam, eveniet quidem consequuntur dolorum modi quis nulla omnis nobis architecto dignissim
+                Ensuring access to clean water and reliable sanitation systems for healthier communities. At Kiru General Services, we are committed to sustainable solutions that improve lives and support development.
               </Typography>
               <div className="flex gap-2">
                 <Button size="lg" color="white">
@@ -186,7 +207,7 @@ function HomeScreen() {
 <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl mb-6" data-aos='fade-right'>We Are Experts</h2> */}
           <p className="font-light text-gray-600 mb-6 leading-relaxed" data-aos='fade-down'>
             {/* Welcome to Vialey Kankou Tours - Your Gateway to Memorable Experiences in Uganda! <br/> */}
-            We Are Experts. <br />Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut harum pariatur ipsam tempore optio commodi cumque hic quos vero dolore voluptates qui blanditiis earum eius a, placeat sapiente nihil ratione?
+            Kiru General Services is a leading construction company specializing in roads, buildings, and water works. With a commitment to quality, safety, and sustainability, we deliver infrastructure solutions that drive progress and transform communities.
 
           </p>
         </div>
@@ -216,11 +237,11 @@ function HomeScreen() {
             <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">Road and Drainage Construction</h2>
             {/* <p className="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed"> */}
             <Typography>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores animi esse eaque deserunt accusantium sint. Neque, quo nobis voluptatum ab deserunt veniam deleniti, ipsum possimus autem recusandae dolore molestias quam?
+            We design and build durable roads and efficient drainage systems that enhance connectivity and protect against water-related challenges. Our expertise ensures long-lasting infrastructure tailored to community needs.
             </Typography>
             {/* </p> */}
             <Typography>
-              <Link href="/road-and-drainage" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest item-left py-3 px-8 hover:bg-primary hover:text-white">View</Link>
+              <Link href="/road-and-drainage" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest item-left py-3 px-8 hover:bg-primary hover:text-white">View Service</Link>
             </Typography>
           </div>
         </div>
@@ -238,8 +259,8 @@ function HomeScreen() {
             <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">Building Construction</h2>
             {/* <p className="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed"> */}
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellendus et vitae saepe cupiditate error nam ducimus aspernatur, at officia impedit, ipsam, sed inventore quidem rerum. Illum, eveniet. Labore, sint?
-              <Link href="/buildings" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">Inquire more</Link>
+            From residential to commercial projects, we deliver exceptional building solutions with precision and professionalism. Let us turn your vision into a structure that stands the test of time.<br/>
+              <Link href="/buildings" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">View Service</Link>
               {/* </p> */}
               {/* <a href="" className="inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">Book Custom Package</a> */}
             </Typography>
@@ -259,11 +280,12 @@ function HomeScreen() {
             <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">Water and Sanitation</h2>
             {/* <p className="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed"> */}
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam quidem consequatur, blanditiis non libero magni animi alias voluptate accusantium facere, minus exercitationem. Fugiat unde nihil voluptas. Amet, laboriosam repudiandae?
+            We provide sustainable water and sanitation systems, ensuring clean water access and proper waste management to support healthier and thriving communities.
+
             </Typography>
             {/* </p> */}
             <Typography>
-              <Link href="/water-and-sanitation" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">Contact</Link>
+              <Link href="/water-and-sanitation" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">View Service</Link>
             </Typography>
           </div>
         </div>
@@ -307,14 +329,12 @@ function HomeScreen() {
 
         <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-12" data-aos='slide-up'>
           <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 md:max-w-full sm:max-w-sm sm:mx-auto lg:max-w-full">
-            {/* {events && events.map((event, index) => (
-                <Link key={index} href='/events/viewevent'>
-                </Link>
-                ))} */}
+            {projects && projects.map((project, index) => (
+                
+            <Events project={project}/>
+                ))}
 
-            <Events />
-            <Events />
-            <Events />
+            
 
 
           </div>

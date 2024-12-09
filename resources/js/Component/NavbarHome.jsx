@@ -27,7 +27,7 @@ function NavbarHome() {
 
     return (
         <nav
-            className={`sticky top-0 w-full bg-gradient-to-r from-secondary to-primary shadow bg-opacity-75 z-40 ${scrollOpaque ? '' : 'bg-opacity-20'
+            className={`sticky top-0 w-full bg-white shadow bg-opacity-95 z-40 ${scrollOpaque ? '' : 'bg-opacity-20'
                 }`}
 
         >
@@ -37,7 +37,7 @@ function NavbarHome() {
                         <Link className='flex h-full items-center' href="/">
                             <img src='/images/resources/kiru-logo.png' className='w-16 h-14 mr-3' />
                             <div className='h-full align-middle justify-center  content-center text-center pt-2' >
-                                <h2 className="text-1xl  md:text-2xl font-bold text-white">KIRU GENERAL SERVICES</h2>
+                                <h2 className="text-1xl  md:text-2xl font-bold text-gray-800">KIRU GENERAL SERVICES</h2>
                             </div>
                         </Link>
 
@@ -84,8 +84,8 @@ function NavbarHome() {
                         className={`flex-1 justify-self-center mt-8 lg:block lg:pb-0 lg:mt-0 ${navbar ? "block" : "hidden"
                             }`}
                     >
-                        <ul className="justify-center items-center space-y-8 lg:flex lg:space-x-4 lg:space-y-0">
-                            <li className="text-white hover:text-yellow-500">
+                        <ul className="justify-center items-center space-y-2 lg:flex lg:space-x-2 lg:space-y-0">
+                            <li className="text-gray-800 font-bold hover:text-yellow-900">
                                 <Link href="/">
                                     <div className='flex'>
 
@@ -96,7 +96,7 @@ function NavbarHome() {
                                     </div>
                                 </Link>
                             </li>
-                            <li className="text-white hover:text-yellow-500">
+                            <li className="text-gray-800 font-bold hover:text-yellow-900">
 
 
 
@@ -163,7 +163,16 @@ function NavbarHome() {
 
                             </li>
 
-                            <li className="text-white hover:text-yellow-500">
+                            <li className="text-gray-800 font-bold hover:text-yellow-900">
+                                <Link href="/projectlist" className='flex items-center'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+                                    </svg>
+
+                                    Projects
+                                </Link>
+                            </li>
+                            <li className="text-gray-800 font-bold hover:text-yellow-900">
                                 <Link href="/gallery" className='flex items-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
@@ -172,7 +181,7 @@ function NavbarHome() {
                                     Gallery
                                 </Link>
                             </li>
-                            <li className="text-white hover:text-yellow-500">
+                            <li className="text-gray-800 font-bold hover:text-yellow-900">
                                 <Link href="/equipment" className='flex items-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
@@ -181,7 +190,7 @@ function NavbarHome() {
                                     Equipments
                                 </Link>
                             </li>
-                            <li className="text-white hover:text-yellow-500">
+                            <li className="text-gray-800 font-bold hover:text-yellow-900">
                                 <Link href="/careers" className='flex items-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
@@ -190,7 +199,7 @@ function NavbarHome() {
                                 </Link>
                             </li>
 
-                            {/* <li className="text-white hover:text-yellow-500">
+                            {/* <li className="text-white hover:text-yellow-900">
                                 <Link href="/careers" className='flex items-center'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
@@ -199,7 +208,7 @@ function NavbarHome() {
                                     Careers
                                 </Link>
                             </li> */}
-                            <li className="text-white hover:text-yellow-500">
+                            <li className="text-gray-800 font-bold hover:text-yellow-900">
                                 <Link href="/aboutus" className='flex items-center'> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                                 </svg>

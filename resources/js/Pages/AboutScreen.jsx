@@ -49,7 +49,7 @@ function AboutScreen() {
                   <p className='lg:pr-10'>
                     Welcome to Kiru General Services Ltd, your trusted partner in roads, buildings, and waterworks construction. We are dedicated to delivering exceptional solutions that shape a brighter and more sustainable future.<br />
 
-                    <br />Our Story<br />
+                    <br /><b>Our Story</b><br />
 
                     Kiru General Services Ltd was established in 2004 as a company participating
                     in general civil works i.e. Buildings, Roads and Water works.<br /><br />
@@ -58,7 +58,7 @@ function AboutScreen() {
                     fresh graduates from higher Institutions of learning to partake of selfemployment rather than job seeking from government institutions and as such
                     having a meaningful contribution towards the economy.
                     <br /><br />
-                    Our Commitment
+                    <b>Our Commitment</b>
                     <br />
                     We are committed to a construction environment that maximizes sustainable
                     growth of contractors, provides recognizable housing and infrastructure,
@@ -66,7 +66,7 @@ function AboutScreen() {
                     <br /><br />
 
 
-                    Partner with Us to Build the Future
+                    <b>Partner with Us to Build the Future</b>
                     <br />
                     Build a future of excellence with Kiru General Services Ltd. From constructing durable roads and modern buildings to delivering reliable waterworks solutions, we bring your visions to life. Let us pave the way to progress with our expertise, dedication, and commitment to quality. Contact us today to turn your ideas into enduring landmarks!
 

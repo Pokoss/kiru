@@ -302,7 +302,8 @@ function AboutScreen() {
                       Address
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Ntinda,<br />
+                    Plot 2568 Nsubuga Kakembo Drive,<br/>
+                    Buye - Ntinda,<br />
                       Kampala, Uganda
                     </dd>
                   </div>
@@ -325,7 +326,7 @@ function AboutScreen() {
                       Phone number
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      +256-321-456-789
+                    +256 (0) 414 289 803 <br/> +256 (0) 414 574 505<br/>+256 (0) 772 401 781<br/>+256 (0) 752 401 781
                     </dd>
                   </div>
                 </div>

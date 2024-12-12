@@ -14,7 +14,7 @@ function ProjectlistScreen() {
     {
       'title':'Mukono ODP',
       'progress':'Complete',
-      'type':'Buliding',
+      'type':'Building',
       'imageurl':'/images/projects/mukono-odp.jpg',
     },
     {

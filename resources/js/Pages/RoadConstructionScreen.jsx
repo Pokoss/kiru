@@ -33,7 +33,7 @@ function RoadConstructionScreen() {
 
                             </div>
 
-                            <p className="my-5">
+                            <p className="my-5 w-full text-start">
                                 At Kiru General Services, we understand the vital role that roads and drainage systems play in connecting communities and supporting development. Our road construction services focus on creating durable, high-quality surfaces that ensure smooth transportation and withstand the test of time. We also design and install efficient drainage systems to prevent flooding, protect infrastructure, and promote environmental sustainability.
 
                                 Whether it's a highway, urban road, or rural pathway, our team combines cutting-edge technology and best practices to deliver reliable infrastructure solutions tailored to your needs. Trust us to build roads and drainage systems that lay the foundation for growth and connectivity.

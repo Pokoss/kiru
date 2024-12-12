@@ -33,7 +33,7 @@ function BuildingConstructionScreen() {
 
                             </div>
 
-                            <p className="my-5">
+                            <p className="my-5 w-full text-start">
                                 Kiru General Services is your trusted partner for building construction projects that blend functionality, aesthetics, and durability. From residential homes to commercial complexes, we bring your vision to life with precision and a commitment to quality.
 
                                 Our expert team handles every aspect of construction, from design and material selection to execution and finishing. With a focus on safety, efficiency, and sustainability, we ensure that every building we construct meets and exceeds your expectations. Partner with us to create structures that stand as a testament to innovation and excellence.

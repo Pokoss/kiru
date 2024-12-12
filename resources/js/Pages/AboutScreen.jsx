@@ -32,7 +32,7 @@ function AboutScreen() {
 
         <div id="about" className="relative bg-white overflow-hidden">
           <div className="max-w-7xl mx-auto">
-            <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <div className="relative z-10 pb-8 bg-white md:pb-10 lg:max-w-2xl lg:w-full lg:pb-10 xl:pb-10">
               <svg className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
                 fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
                 <polygon points="50,0 100,0 50,100 0,100"></polygon>
@@ -40,7 +40,7 @@ function AboutScreen() {
 
               <div className="pt-1"></div>
 
-              <main className="mt-5 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+              <main className="mt-5 mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
                 <div className="sm:text-center lg:text-left">
                   <h2 className="my-7 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
                     About Kiru General Services
@@ -82,7 +82,7 @@ function AboutScreen() {
         </div>
 
 
-        <div className="p-10 max-w-screen-lg mx-auto">
+        <div className="p-5 max-w-screen-lg mx-auto">
           <div className="text-center mb-4">
             <p className="mt-4 text-sm leading-7 text-gray-500 font-regular">
               THE TEAM
@@ -107,7 +107,7 @@ function AboutScreen() {
             Our<span className="text-primary"> Stats</span>
           </h3>
         </div>
-        <div className="container my-24 px-6 mx-auto">
+        <div className="container px-6 mx-auto">
 
 
           <section className="mb-32 text-gray-800 text-center lg:text-left">

@@ -84,7 +84,7 @@ function HomeScreen() {
                   About Us
                 </Button>
                 </Link>
-                <Button className='animate-bounce hover:motion-safe:animate-spin' size="lg" color="white" variant="text">
+                <Button className='' size="lg" color="white" variant="text">
                   Contact Us
                 </Button>
               </div>
@@ -114,9 +114,11 @@ function HomeScreen() {
                 Building pathways to progress with durable roads and efficient drainage systems. Kiru General Services combines expertise and innovation to deliver infrastructure that enhances connectivity and resilience.
               </Typography>
               <div className="flex gap-2">
+                <Link href='/road-and-drainage'>
                 <Button size="lg" color="white">
                   View
                 </Button>
+                </Link>
                 <Button size="lg" color="white" variant="text">
                   Contact
                 </Button>
@@ -147,9 +149,11 @@ function HomeScreen() {
                 Transforming visions into reality with innovative building solutions. Kiru General Services delivers high-quality residential, commercial, and industrial construction projects that stand the test of time.
               </Typography>
               <div className="flex gap-2">
+                <Link href='/buildings'>
                 <Button size="lg" color="white">
                   View
                 </Button>
+                </Link>
                 <Button size="lg" color="white" variant="text">
                   Contact
                 </Button>
@@ -180,9 +184,11 @@ function HomeScreen() {
                 Ensuring access to clean water and reliable sanitation systems for healthier communities. At Kiru General Services, we are committed to sustainable solutions that improve lives and support development.
               </Typography>
               <div className="flex gap-2">
+                <Link href='/water-and-sanitation'>
                 <Button size="lg" color="white">
                   Explore
                 </Button>
+                </Link>
                 <Button size="lg" color="white" variant="text">
                   Gallery
                 </Button>

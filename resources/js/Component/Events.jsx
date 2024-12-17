@@ -5,6 +5,8 @@ import { Link } from '@inertiajs/react';
 function Events({project}) {
     
   return (
+    <Link href='/projectlist/details'>
+    
     <div className=" overflow-hidden transition-shadow duration-300 bg-white rounded shadow-2xl shadow-gray-300">
             <img
               src={project.imageurl}
@@ -33,6 +35,7 @@ function Events({project}) {
               
             </div>
           </div>
+          </Link>
   )
 }
 

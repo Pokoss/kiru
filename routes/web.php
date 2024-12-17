@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -42,6 +43,11 @@ Route::get('/road-and-drainage', fn() => Inertia::render('RoadConstructionScreen
 Route::get('/equipment', fn() => Inertia::render('EquipmentScreen'));
 Route::get('/gallery', fn() => Inertia::render('GalleryScreen'));
 Route::get('/projectlist', fn() => Inertia::render('ProjectlistScreen'));
+Route::get('/projectlist/details', fn() => Inertia::render('ProjectDetailsScreen'));
 Route::get('/aboutus', fn() => Inertia::render('AboutScreen'));
 Route::get('/careers', fn() => Inertia::render('CareersScreen'));
+Route::get('/dashboard/home', fn() => Inertia::render('DashboardHomeScreen'));
+
+Route::get('/dashboard/projects', [ProjectController::class, 'index']);
+Route::post('/dashboard/projects/post', [ProjectController::class, 'store']);
 require __DIR__.'/auth.php';

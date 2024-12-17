@@ -30,32 +30,32 @@ function HomeScreen() {
 
   ]
 
-  const projects =[
+  const projects = [
 
     {
-      'title':'Busega',
-      'progress':'Ongoing',
-      'type':'ROAD',
-      'imageurl':'/images/projects/busega.jpg',
+      'title': 'Busega',
+      'progress': 'Ongoing',
+      'type': 'ROAD',
+      'imageurl': '/images/projects/busega.jpg',
     },
     {
-      'title':'Mukono ODP',
-      'progress':'Complete',
-      'type':'Building',
-      'imageurl':'/images/projects/mukono-odp.jpg',
+      'title': 'Mukono ODP',
+      'progress': 'Complete',
+      'type': 'Building',
+      'imageurl': '/images/projects/mukono-odp.jpg',
     },
     {
-      'title':'Kizanyiro',
-      'progress':'Complete',
-      'type':'ROAD',
-      'imageurl':'/images/projects/kizanyiro-road.jpg',
+      'title': 'Kizanyiro',
+      'progress': 'Complete',
+      'type': 'ROAD',
+      'imageurl': '/images/projects/kizanyiro-road.jpg',
     },
-  ] 
-  
+  ]
+
 
   return (
     <div>
-      <Carousel loop='true' autoplay='true' transition={{ duration: 2 }} className="h-[630px]">
+      <Carousel loop='true' autoplay='true' transition={{ duration: 2 }} className="h-[625px]">
         <div className="relative h-full w-full">
           <img
             src="/images/gallery/kiru-01.JPG"
@@ -80,9 +80,9 @@ function HomeScreen() {
               </Typography>
               <div className="flex justify-center gap-2">
                 <Link href='/aboutus'>
-                <Button size="lg" color="white">
-                  About Us
-                </Button>
+                  <Button size="lg" color="white">
+                    About Us
+                  </Button>
                 </Link>
                 <Button className='' size="lg" color="white" variant="text">
                   Contact Us
@@ -115,9 +115,9 @@ function HomeScreen() {
               </Typography>
               <div className="flex gap-2">
                 <Link href='/road-and-drainage'>
-                <Button size="lg" color="white">
-                  View
-                </Button>
+                  <Button size="lg" color="white">
+                    View
+                  </Button>
                 </Link>
                 <Button size="lg" color="white" variant="text">
                   Contact
@@ -150,9 +150,9 @@ function HomeScreen() {
               </Typography>
               <div className="flex gap-2">
                 <Link href='/buildings'>
-                <Button size="lg" color="white">
-                  View
-                </Button>
+                  <Button size="lg" color="white">
+                    View
+                  </Button>
                 </Link>
                 <Button size="lg" color="white" variant="text">
                   Contact
@@ -185,9 +185,9 @@ function HomeScreen() {
               </Typography>
               <div className="flex gap-2">
                 <Link href='/water-and-sanitation'>
-                <Button size="lg" color="white">
-                  Explore
-                </Button>
+                  <Button size="lg" color="white">
+                    Explore
+                  </Button>
                 </Link>
                 <Button size="lg" color="white" variant="text">
                   Gallery
@@ -243,7 +243,7 @@ function HomeScreen() {
             <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">Road and Drainage Construction</h2>
             {/* <p className="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed"> */}
             <Typography>
-            We design and build durable roads and efficient drainage systems that enhance connectivity and protect against water-related challenges. Our expertise ensures long-lasting infrastructure tailored to community needs.
+              We design and build durable roads and efficient drainage systems that enhance connectivity and protect against water-related challenges. Our expertise ensures long-lasting infrastructure tailored to community needs.
             </Typography>
             {/* </p> */}
             <Typography>
@@ -265,7 +265,7 @@ function HomeScreen() {
             <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">Building Construction</h2>
             {/* <p className="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed"> */}
             <Typography>
-            From residential to commercial projects, we deliver exceptional building solutions with precision and professionalism. Let us turn your vision into a structure that stands the test of time.<br/>
+              From residential to commercial projects, we deliver exceptional building solutions with precision and professionalism. Let us turn your vision into a structure that stands the test of time.<br />
               <Link href="/buildings" className="mt-5 inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">View Service</Link>
               {/* </p> */}
               {/* <a href="" className="inline-block border-2 border-primary font-light text-primary text-sm uppercase tracking-widest py-3 px-8 hover:bg-primary hover:text-white">Book Custom Package</a> */}
@@ -286,7 +286,7 @@ function HomeScreen() {
             <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">Water and Sanitation</h2>
             {/* <p className="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed"> */}
             <Typography>
-            We provide sustainable water and sanitation systems, ensuring clean water access and proper waste management to support healthier and thriving communities.
+              We provide sustainable water and sanitation systems, ensuring clean water access and proper waste management to support healthier and thriving communities.
 
             </Typography>
             {/* </p> */}
@@ -336,11 +336,11 @@ function HomeScreen() {
         <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-12" data-aos='slide-up'>
           <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 md:max-w-full sm:max-w-sm sm:mx-auto lg:max-w-full">
             {projects && projects.map((project, index) => (
-                
-            <Events project={project}/>
-                ))}
 
-            
+              <Events project={project} />
+            ))}
+
+
 
 
           </div>
@@ -534,7 +534,7 @@ function HomeScreen() {
 
       </section>
       <div className="map-container">
-       
+
       </div>
     </div>
 

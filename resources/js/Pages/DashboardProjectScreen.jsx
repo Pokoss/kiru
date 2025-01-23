@@ -7,8 +7,8 @@ import DataTable from 'react-data-table-component';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-function DashboardProjectScreen() {
-
+function DashboardProjectScreen({ projects }) {
+    console.log(projects);
     const [size, setSize] = useState(null);
     const handleOpen = (value) => setSize(value);
     const [sizeEdit, setSizeEdit] = useState(null);
@@ -19,17 +19,18 @@ function DashboardProjectScreen() {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        
+
         // toast.success(data.name)
         data.imageurl = image;
         post('/dashboard/projects/post', {
             preserveScroll: true, preserveState: true,
             onSuccess: () => {
-            //   toast.success('We have received you request, we shall contact you shortly')
-              reset();
-              setData({})
+                //   toast.success('We have received you request, we shall contact you shortly')
+                reset();
+                setData({})
+                handleOpen();
             }
-          });
+        });
 
     }
 
@@ -128,7 +129,7 @@ function DashboardProjectScreen() {
                         </DialogHeader>
 
                         <form
-                        onSubmit={handleSubmit}
+                            onSubmit={handleSubmit}
                         >
                             <DialogBody divider className="grid place-items-center gap-4">
                                 {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-16 w-16 text-primary">
@@ -152,7 +153,7 @@ function DashboardProjectScreen() {
                                     <Option value='Complete'>Complete</Option>
                                 </Select>
                                 <Select color='deep-orange' label="Type"
-                                value={data.type ?? ''} onChange={e=>setData('type',e)}
+                                    value={data.type ?? ''} onChange={e => setData('type', e)}
                                 // value={position} onChange={(e) => setPosition(e)}
                                 >
                                     <Option value='Road'>ROAD</Option>
@@ -160,8 +161,8 @@ function DashboardProjectScreen() {
                                     <Option value='WATER'>WATER</Option>
                                 </Select>
 
-                                <Textarea label='Details' 
-                                value={data.details ?? ''} onChange={e=>setData('details',e.target.value)}
+                                <Textarea label='Details'
+                                    value={data.details ?? ''} onChange={e => setData('details', e.target.value)}
                                 />
 
                             </DialogBody>
@@ -174,12 +175,12 @@ function DashboardProjectScreen() {
                                 <Button type='submit' className='bg-primary'>
                                     Add
                                 </Button>
-<ToastContainer/>
+                                <ToastContainer />
 
                             </DialogFooter>
                         </form>
                     </Dialog>
-                    
+
                 </Fragment>
                 <DataTable
                     title={'Project' &&
@@ -205,7 +206,7 @@ function DashboardProjectScreen() {
                         </div>
                     }
                     columns={columns}
-                    data={data1}
+                    data={projects.data}
                     customStyles={customStyles}
                     pointerOnHover
                     onRowClicked={(row, event) => !children && ExpandableComponent ? null : editRow(row, event)}

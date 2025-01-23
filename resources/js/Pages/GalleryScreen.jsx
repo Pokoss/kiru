@@ -1,7 +1,7 @@
 import Layout from '@/Component/Layout';
 import React from 'react'
 
-function GalleryScreen() {
+function GalleryScreen({gallery}) {
 
   const data = [
     {
@@ -61,15 +61,15 @@ function GalleryScreen() {
         </div>
     
     <div className="p-5 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-  {data.map(({ imageLink, title }, index) => (
+  {gallery.data && gallery.data.map(( gal, index) => (
     <div key={index} className="relative group">
       <img
         className="h-40 w-full max-w-full rounded-lg object-cover object-center"
-        src={imageLink}
+        src={gal.imageurl}
         alt="gallery-photo"
       />
       <div className="absolute bottom-0 left-0 right-0 h-16 flex items-center justify-center bg-gradient-to-t from-black to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-lg">
-        <span className="text-sm font-medium">{title}</span>
+        <span className="text-sm font-medium">{gal.name}</span>
       </div>
     </div>
   ))}

@@ -37,7 +37,7 @@ function NavbarHome() {
                         <Link className='flex h-full items-center' href="/">
                             <img src='/images/resources/kiru-logo.png' className='w-16 h-14 mr-3' />
                             <div className='h-full align-middle justify-center  content-center text-center pt-2' >
-                                <h2 className="text-1xl  md:text-2xl font-bold text-gray-800">KIRU GENERAL SERVICES</h2>
+                                <h2 className="md:text-lg font-extrabold text-gray-800">KIRU GENERAL SERVICES LIMITED</h2>
                             </div>
                         </Link>
 

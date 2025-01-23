@@ -5,7 +5,7 @@ import { Link } from '@inertiajs/react';
 function Events({project}) {
     
   return (
-    <Link href='/projectlist/details'>
+    <Link href={'/projectlist/'+project.slug}>
     
     <div className=" overflow-hidden transition-shadow duration-300 bg-white rounded shadow-2xl shadow-gray-300">
             <img
@@ -22,14 +22,14 @@ function Events({project}) {
                 >
                   {project.type}
                 </span>
-                <span className="text-gray-600">— {project.progress}</span>
+                <span className="text-gray-600">— {project.status}</span>
               </p>
               <span
                 aria-label="Category"
                 title="Visit the East"
                 className="inline-block mb-3 text-1xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
-                {project.title}
+                {project.name}
               </span>
              
               

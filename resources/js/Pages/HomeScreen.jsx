@@ -7,7 +7,7 @@ import '@splidejs/react-splide/css';
 import { Link } from '@inertiajs/react';
 import Events from '@/Component/Events';
 import Layout from '@/Component/Layout';
-function HomeScreen() {
+function HomeScreen({projects}) {
   const testimonials = [
     {
       'id': '1',
@@ -30,27 +30,27 @@ function HomeScreen() {
 
   ]
 
-  const projects = [
+  // const projects = [
 
-    {
-      'title': 'Busega',
-      'progress': 'Ongoing',
-      'type': 'ROAD',
-      'imageurl': '/images/projects/busega.jpg',
-    },
-    {
-      'title': 'Mukono ODP',
-      'progress': 'Complete',
-      'type': 'Building',
-      'imageurl': '/images/projects/mukono-odp.jpg',
-    },
-    {
-      'title': 'Kizanyiro',
-      'progress': 'Complete',
-      'type': 'ROAD',
-      'imageurl': '/images/projects/kizanyiro-road.jpg',
-    },
-  ]
+  //   {
+  //     'title': 'Busega',
+  //     'progress': 'Ongoing',
+  //     'type': 'ROAD',
+  //     'imageurl': '/images/projects/busega.jpg',
+  //   },
+  //   {
+  //     'title': 'Mukono ODP',
+  //     'progress': 'Complete',
+  //     'type': 'Building',
+  //     'imageurl': '/images/projects/mukono-odp.jpg',
+  //   },
+  //   {
+  //     'title': 'Kizanyiro',
+  //     'progress': 'Complete',
+  //     'type': 'ROAD',
+  //     'imageurl': '/images/projects/kizanyiro-road.jpg',
+  //   },
+  // ]
 
 
   return (

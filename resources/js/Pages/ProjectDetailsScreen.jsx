@@ -1,13 +1,14 @@
 import Layout from '@/Component/Layout'
 import React from 'react'
 
-function ProjectDetailsScreen() {
+function ProjectDetailsScreen({project}) {
+    console.log(project)
   return (
     <div>
         <div className='container mx-auto flex flex-wrap py-6'>
                 <section className="w-full md:w-2/3 flex flex-col items-center px-3">
                     <article className="w-full flex flex-col shadow">
-                        <a className="text-3xl font-bold hover:text-gray-700 p-2"> Mukono ODP </a>
+                        <a className="text-3xl font-bold hover:text-gray-700 p-2"> {project.name} </a>
 
                         <p className="mb-3 p-2 text-xs font-semibold tracking-wide uppercase">
                             {/* <a
@@ -30,7 +31,7 @@ function ProjectDetailsScreen() {
                         </div> */}
 
                         <div>
-                            <img className='w-full' src={'/images/projects/mukono-odp.jpg'} />
+                            <img className='w-full' src={'/'+project.imageurl} />
                         </div>
 
 
@@ -38,13 +39,13 @@ function ProjectDetailsScreen() {
 
                             <h2 className="text-green-600 text-sm font-bold uppercase p-2">Details</h2>
                             <p className="pb-6 mt-5">
-                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facere perferendis iusto aspernatur omnis eligendi tempore, laudantium ad pariatur odio dolores, libero perspiciatis maxime quidem voluptatibus, sapiente sequi eos repudiandae.
+                              {project.details}
                             </p>
 
                         </div>
                         <div className="bg-white flex flex-col justify-start px-6">
 
-                            <h2 className="text-green-600 text-sm font-bold uppercase px-2 mb-4">What is Included</h2>
+                            {/* <h2 className="text-green-600 text-sm font-bold uppercase px-2 mb-4">What is Included</h2> */}
                             <ul className="max-w-md space-y-1 text-gray-500 list-inside mb-6">
                                 {/* {tour_package.activities.map((activity, index) =>
                                     <li key={index} className="flex items-center">

@@ -93,7 +93,7 @@ function DashboardHomeScreen() {
         <Link href='/medical/records' as='button' className="flex items-center text-left justify-between py-2 px-4 bg-white rounded shadow-xs dark:bg-gray-800">
           <div>
             <p className="text-xl font-bold text-gray-700 dark:text-gray-200">
-              12000
+              12,000
             </p>
             <p className="text-lg font-semibold text-red-700 dark:text-gray-400">
               Tickets sold today

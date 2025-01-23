@@ -16,8 +16,16 @@ class ProjectController extends Controller
      */
     public function index()
     {
+        $projects = Project::latest()->paginate(10);
+        
+        return Inertia::render('DashboardProjectScreen',['projects'=> $projects]);
+    }
+    public function viewProjects()
+    {
         //
-        return Inertia::render('DashboardProjectScreen');
+        $projects = Project::latest()->paginate(10);
+        
+        return Inertia::render('ProjectlistScreen',['projects'=> $projects]);
     }
 
     /**
@@ -43,7 +51,7 @@ class ProjectController extends Controller
         $date = Carbon::now()->format('YmdHisv');
         $value = $request->name . ' ' . $date . ' ' . Str::random();
         $image_slug = Str::slug($value, '-');
-        $project_name = $request->productName . ' ' . Str::random();
+        $project_name = $request->name . ' ' . Str::random();
         $project_slug = Str::slug($project_name, '-');
 
         $file = $request->file('imageurl');
@@ -65,9 +73,11 @@ class ProjectController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Project $project)
+    public function show(Request $request,$slug)
     {
         //
+        $project = Project::where('slug',$slug)->first();
+        return Inertia::render('ProjectDetailsScreen',['project'=> $project]);
     }
 
     /**

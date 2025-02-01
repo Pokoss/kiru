@@ -6,8 +6,8 @@ function AboutScreen() {
   const employees = [
     {
       'id': '1',
-      'name': 'Eng. George Patrick Kiberu',
-      'title': 'Technical Director',
+      'name': 'MR.KIBERU GEORGE PATRICK',
+      'title': 'MANAGING DIRECTOR',
       'image': '/images/team/IMG_1987.jpg',
       'description': 'Holds a Bachelor’s in Civil and Building Engineering and a Higher Diploma in Civil and Construction Engineering from Kyambogo, is a registered engineer with ERB, and a corporate member of UPE.',
       'facebook': '',
@@ -16,18 +16,8 @@ function AboutScreen() {
     },
     {
       'id': '2',
-      'name': 'George William Kiyega',
-      'title': 'Projects Manager',
-      'image': '/images/gallery/kiru-01.JPG',
-      'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
-      'facebook': '',
-      "twitter": '',
-      "linkedIn": ''
-    },
-    {
-      'id': '2',
-      'name': 'Unamed Member',
-      'title': 'Team Member',
+      'name': 'MRS. NAMULI ANNET',
+      'title': 'K-HUMAN RESOURCE MANAGER',
       'image': '/images/team/IMG_1960.jpg',
       'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
       'facebook': '',
@@ -36,8 +26,8 @@ function AboutScreen() {
     },
     {
       'id': '2',
-      'name': 'Unamed Member',
-      'title': 'Team Member',
+      'name': 'KASAJJA CHRISTOPHER',
+      'title': 'OPERATIONS MANAGER',
       'image': '/images/team/IMG_1994.jpg',
       'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
       'facebook': '',
@@ -46,8 +36,8 @@ function AboutScreen() {
     },
     {
       'id': '2',
-      'name': 'Unamed Member',
-      'title': 'Team Member',
+      'name': 'MITCHELL ACIRO',
+      'title': 'HEALTH AND SAFETY OFFICER',
       'image': '/images/team/IMG_2002.jpg',
       'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
       'facebook': '',
@@ -56,8 +46,8 @@ function AboutScreen() {
     },
     {
       'id': '2',
-      'name': 'Unamed Member',
-      'title': 'Team Member',
+      'name': 'MR. NAMUTETE PIUS',
+      'title': 'ENGINEERING OFFICER',
       'image': '/images/team/IMG_2009.jpg',
       'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
       'facebook': '',
@@ -66,8 +56,8 @@ function AboutScreen() {
     },
     {
       'id': '2',
-      'name': 'Unamed Member',
-      'title': 'Team Member',
+      'name': 'MR. GUMUSIRIZA MARTIN',
+      'title': 'ENGINEERING OFFICER',
       'image': '/images/team/IMG_2189.jpg',
       'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
       'facebook': '',
@@ -76,8 +66,8 @@ function AboutScreen() {
     },
     {
       'id': '2',
-      'name': 'Unamed Member',
-      'title': 'Team Member',
+      'name': 'MR. NDASE CHARLES',
+      'title': 'SURVEYING OFFICER',
       'image': '/images/team/IMG_2193.jpg',
       'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
       'facebook': '',
@@ -151,7 +141,7 @@ function AboutScreen() {
               Our<span className="text-primary"> Team</span>
             </h3>
           </div>
-          <div className="sm:grid grid-cols-2 gap-6 my-10">
+          <div className="sm:grid grid-cols-3 gap-6 my-10">
 
             {employees && employees.map((employee) => (
 

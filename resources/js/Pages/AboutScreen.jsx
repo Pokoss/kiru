@@ -36,6 +36,16 @@ function AboutScreen() {
     },
     {
       'id': '2',
+      'name': 'MR. TISHEKWA SAM',
+      'title': 'ACCOUNTS MANAGER',
+      'image': '/images/team/sam.jpg',
+      'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
+      'facebook': '',
+      "twitter": '',
+      "linkedIn": ''
+    },
+    {
+      'id': '2',
       'name': 'MITCHELL ACIRO',
       'title': 'HEALTH AND SAFETY OFFICER',
       'image': '/images/team/IMG_2002.jpg',

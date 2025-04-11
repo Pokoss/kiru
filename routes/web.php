@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CareerController;
+use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\FAQController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
@@ -31,6 +32,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::get('/dashboard/projects', [ProjectController::class, 'index']);
+    Route::post('/dashboard/projects/post', [ProjectController::class, 'store']);
+
+    Route::get('/dashboard/employee', [EmployeeController::class, 'index']);
+    Route::post('/add-employee', [EmployeeController::class, 'store']);
+    
+
 });
 
 Route::get('/buildings', fn() => Inertia::render('BuildingConstructionScreen'));
@@ -46,10 +55,9 @@ Route::get('/dashboard/home', fn() => Inertia::render('DashboardHomeScreen'));
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/dashboard/projects', [ProjectController::class, 'index']);
 Route::get('/projectlist', [ProjectController::class, 'viewProjects']);
 Route::get('/projectlist/{slug}', [ProjectController::class, 'show']);
-Route::post('/dashboard/projects/post', [ProjectController::class, 'store']);
+
 
 
 Route::get('/gallery', [GalleryController::class, 'showGallery']);

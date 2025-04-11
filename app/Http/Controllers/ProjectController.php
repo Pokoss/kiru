@@ -43,7 +43,7 @@ class ProjectController extends Controller
     {
         //
         $request->validate([
-           
+            'name' => 'required',
         ]);
 
         // return Response([$request->name]);

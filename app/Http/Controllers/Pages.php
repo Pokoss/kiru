@@ -19,7 +19,7 @@ class Pages extends Controller
 
     public function about()
     {
-        $employes = Employee::all();
+        $employes = Employee::latest()->all();
         $faqs = FAQ::all();
         $ongoing_project_count = Project::where('status','Ongoing')->count();
         $complete_project_count = Project::where('status','Complete')->count();

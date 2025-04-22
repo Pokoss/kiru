@@ -5,6 +5,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\FAQController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Pages;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\TestimonialController;
@@ -38,8 +39,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard/employee', [EmployeeController::class, 'index']);
     Route::post('/add-employee', [EmployeeController::class, 'store']);
-    
 
+    Route::get('/dashboard/faqs', [FAQController::class, 'index']);
+    Route::post('/dashboard/faq/post', [FAQController::class, 'store']);
 });
 
 Route::get('/buildings', fn() => Inertia::render('BuildingConstructionScreen'));
@@ -49,7 +51,8 @@ Route::get('/equipment', fn() => Inertia::render('EquipmentScreen'));
 // Route::get('/gallery', fn() => Inertia::render('GalleryScreen'));
 // Route::get('/projectlist', fn() => Inertia::render('ProjectlistScreen'));
 // Route::get('/projectlist/project', fn() => Inertia::render('ProjectDetailsScreen'));
-Route::get('/aboutus', fn() => Inertia::render('AboutScreen'));
+// Route::get('/aboutus', fn() => Inertia::render('AboutScreen'));
+Route::get('/aboutus', [Pages::class, 'about']);
 Route::get('/careers', fn() => Inertia::render('CareersScreen'));
 Route::get('/dashboard/home', fn() => Inertia::render('DashboardHomeScreen'));
 
@@ -67,11 +70,8 @@ Route::post('/dashboard/gallery/post', [GalleryController::class, 'store']);
 Route::get('/dashboard/testimonials', [TestimonialController::class, 'index']);
 Route::post('/dashboard/testimonials/post', [TestimonialController::class, 'store']);
 
-Route::get('/dashboard/faqs', [FAQController::class, 'index']);
-Route::post('/dashboard/faqs/post', [FAQController::class, 'store']);
 
 Route::get('/careers', [CareerController::class, 'showCareers']);
 Route::get('/dashboard/careers', [CareerController::class, 'index']);
 Route::post('/dashboard/careers/post', [CareerController::class, 'store']);
-require __DIR__.'/auth.php';
-
+require __DIR__ . '/auth.php';

@@ -144,9 +144,9 @@ function DashboardProjectScreen({ projects }) {
                                     <Option value='Building'>BUILDING</Option>
                                     <Option value='WATER'>WATER</Option>
                                 </Select>
-                                <Textarea label='Details'
+                                {/* <Textarea label='Details'
                                     value={data.details ?? ''} onChange={e => setData('details', e.target.value)}
-                                />
+                                /> */}
                             </DialogBody>
                             <DialogFooter className="space-x-2">
                                 <Button onClick={handleOpen} variant="gradient" color="blue-gray">

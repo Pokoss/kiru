@@ -7,28 +7,28 @@ import '@splidejs/react-splide/css';
 import { Link } from '@inertiajs/react';
 import Events from '@/Component/Events';
 import Layout from '@/Component/Layout';
-function HomeScreen({projects}) {
-  const testimonials = [
-    {
-      'id': '1',
-      'title': 'Exceptional Road Construction',
-      'name': 'John K., Local Council Representative',
-      'content': 'Kiru General Services exceeded our expectations by delivering a high-quality road that has greatly improved accessibility in our community. Their professionalism and efficiency were remarkable.',
-    },
-    {
-      'id': '2',
-      'title': 'Reliable Building Partner',
-      'name': 'Sarah M., Business Owner',
-      'content': 'Working with Kiru General Services was a seamless experience. They built our office block on time and within budget, with an exceptional finish that impressed us all',
-    },
-    {
-      'id': '3',
-      'title': 'Sustainable Water Solutions',
-      'name': 'David O., Community Leader',
-      'content': 'The water system installed by Kiru General Services has transformed our village. Clean water is now easily accessible, and the community couldnt be more grateful.',
-    },
+function HomeScreen({projects, testimonials}) {
+  // const testimonials = [
+  //   {
+  //     'id': '1',
+  //     'title': 'Exceptional Road Construction',
+  //     'name': 'John K., Local Council Representative',
+  //     'content': 'Kiru General Services exceeded our expectations by delivering a high-quality road that has greatly improved accessibility in our community. Their professionalism and efficiency were remarkable.',
+  //   },
+  //   {
+  //     'id': '2',
+  //     'title': 'Reliable Building Partner',
+  //     'name': 'Sarah M., Business Owner',
+  //     'content': 'Working with Kiru General Services was a seamless experience. They built our office block on time and within budget, with an exceptional finish that impressed us all',
+  //   },
+  //   {
+  //     'id': '3',
+  //     'title': 'Sustainable Water Solutions',
+  //     'name': 'David O., Community Leader',
+  //     'content': 'The water system installed by Kiru General Services has transformed our village. Clean water is now easily accessible, and the community couldnt be more grateful.',
+  //   },
 
-  ]
+  // ]
 
   // const projects = [
 

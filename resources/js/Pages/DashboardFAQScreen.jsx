@@ -20,7 +20,7 @@ function DashboardFAQScreen({faqs}) {
     
     
             // toast.success(data.name)
-            data.imageurl = image;
+           
             post('/dashboard/faq/post', {
                 preserveScroll: true, preserveState: true,
                 onSuccess: () => {
@@ -32,20 +32,6 @@ function DashboardFAQScreen({faqs}) {
             });
     
         }
-    
-        const [image, setImage] = useState(null);
-        const handleImageChange = (event) => {
-            const file = event.target.files[0];
-            new Compressor(file, {
-                quality: 0.6,
-                success(result) {
-                    setImage(result);
-                },
-                error(err) {
-                    console.log(err.message);
-                },
-            });
-        };
     
         const customStyles = {
             headRow: {
@@ -76,15 +62,11 @@ function DashboardFAQScreen({faqs}) {
         const columns = [
             {
                 name: 'Name',
-                selector: row => row.name,
+                selector: row => row.question,
             },
             {
-                name: 'Status',
-                selector: row => row.status,
-            },
-            {
-                name: 'Details',
-                selector: row => row.details,
+                name: 'Answer',
+                selector: row => row.answer,
             },
             ,
             {
@@ -137,8 +119,8 @@ function DashboardFAQScreen({faqs}) {
 
 
 
-                                <Input label='Name'
-                                    value={data.questio ?? ''} onChange={e => setData('question', e.target.value)} size='sm'
+                                <Input label='Question'
+                                    value={data.question ?? ''} onChange={e => setData('question', e.target.value)} size='sm'
                                 />
                                 
                                 <Textarea label='Answer'

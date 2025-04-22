@@ -8,7 +8,7 @@ function ProjectDetailsScreen({project}) {
         <div className='container mx-auto flex flex-wrap py-6'>
                 <section className="w-full md:w-2/3 flex flex-col items-center px-3">
                     <article className="w-full flex flex-col shadow">
-                        <a className="text-3xl font-bold hover:text-gray-700 p-2"> {project.name} </a>
+                        <a className="text-2xl font-semibold hover:text-gray-700 p-2"> {project.name} </a>
 
                         <p className="mb-3 p-2 text-xs font-semibold tracking-wide uppercase">
                             {/* <a
@@ -35,14 +35,7 @@ function ProjectDetailsScreen({project}) {
                         </div>
 
 
-                        <div className="bg-white flex flex-col justify-start p-6">
-
-                            <h2 className="text-green-600 text-sm font-bold uppercase p-2">Details</h2>
-                            <p className="pb-6 mt-5">
-                              {project.details}
-                            </p>
-
-                        </div>
+                        
                         <div className="bg-white flex flex-col justify-start px-6">
 
                             {/* <h2 className="text-green-600 text-sm font-bold uppercase px-2 mb-4">What is Included</h2> */}

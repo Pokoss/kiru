@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\FAQ;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use Illuminate\Support\Str;
 
 class FAQController extends Controller
 {
@@ -25,6 +26,7 @@ class FAQController extends Controller
     public function create()
     {
         //
+        
     }
 
     /**
@@ -33,7 +35,19 @@ class FAQController extends Controller
     public function store(Request $request)
     {
         //
-        
+        $request->validate([
+            'question' => 'required',
+            'answer' => 'required',
+        ]);
+
+        $faq_question = $request->question . ' ' . Str::random();
+        $project_slug = Str::slug($faq_question, '-');
+        $faq = FAQ:: create([
+            'question'=> $request->question,
+            'answer'=> $request->answer,
+            'slug'=> $project_slug,
+        ]);
+
     }
 
     /**

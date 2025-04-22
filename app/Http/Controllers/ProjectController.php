@@ -62,7 +62,7 @@ class ProjectController extends Controller
             
             'name'=> $request->name,
             'status'=> $request->status,
-            'details'=> $request->details,
+            'details'=> 1,
             'type'=> $request->type,
             'slug'=> $project_slug,
             'imageurl'=>$path

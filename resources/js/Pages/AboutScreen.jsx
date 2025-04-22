@@ -2,90 +2,90 @@ import Layout from '@/Component/Layout'
 import Teamcard from '@/Component/Teamcard'
 import React from 'react'
 
-function AboutScreen() {
-  const employees = [
-    {
-      'id': '1',
-      'name': 'MR.KIBERU GEORGE PATRICK',
-      'title': 'MANAGING DIRECTOR',
-      'image': '/images/team/IMG_1987.jpg',
-      'description': 'Holds a Bachelor’s in Civil and Building Engineering and a Higher Diploma in Civil and Construction Engineering from Kyambogo, is a registered engineer with ERB, and a corporate member of UPE.',
-      'facebook': '',
-      "twitter": '',
-      "linkedIn": ''
-    },
-    {
-      'id': '2',
-      'name': 'MRS. NAMULI ANNET',
-      'title': 'K-HUMAN RESOURCE MANAGER',
-      'image': '/images/team/IMG_1960.jpg',
-      'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
-      'facebook': '',
-      "twitter": '',
-      "linkedIn": ''
-    },
-    {
-      'id': '2',
-      'name': 'KASAJJA CHRISTOPHER',
-      'title': 'OPERATIONS MANAGER',
-      'image': '/images/team/IMG_1994.jpg',
-      'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
-      'facebook': '',
-      "twitter": '',
-      "linkedIn": ''
-    },
-    {
-      'id': '2',
-      'name': 'MR. TISHEKWA SAM',
-      'title': 'ACCOUNTS MANAGER',
-      'image': '/images/team/sam.jpg',
-      'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
-      'facebook': '',
-      "twitter": '',
-      "linkedIn": ''
-    },
-    {
-      'id': '2',
-      'name': 'MITCHELL ACIRO',
-      'title': 'HEALTH AND SAFETY OFFICER',
-      'image': '/images/team/IMG_2002.jpg',
-      'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
-      'facebook': '',
-      "twitter": '',
-      "linkedIn": ''
-    },
-    {
-      'id': '2',
-      'name': 'MR. NAMUTETE PIUS',
-      'title': 'ENGINEERING OFFICER',
-      'image': '/images/team/IMG_2009.jpg',
-      'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
-      'facebook': '',
-      "twitter": '',
-      "linkedIn": ''
-    },
-    {
-      'id': '2',
-      'name': 'MR. GUMUSIRIZA MARTIN',
-      'title': 'ENGINEERING OFFICER',
-      'image': '/images/team/IMG_2189.jpg',
-      'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
-      'facebook': '',
-      "twitter": '',
-      "linkedIn": ''
-    },
-    {
-      'id': '2',
-      'name': 'MR. NDASE CHARLES',
-      'title': 'SURVEYING OFFICER',
-      'image': '/images/team/IMG_2193.jpg',
-      'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
-      'facebook': '',
-      "twitter": '',
-      "linkedIn": ''
-    },
+function AboutScreen({employees, faqs, complete, ongoing}) {
+  // const employees = [
+  //   {
+  //     'id': '1',
+  //     'name': 'MR.KIBERU GEORGE PATRICK',
+  //     'title': 'MANAGING DIRECTOR',
+  //     'image': '/images/team/IMG_1987.jpg',
+  //     'description': 'Holds a Bachelor’s in Civil and Building Engineering and a Higher Diploma in Civil and Construction Engineering from Kyambogo, is a registered engineer with ERB, and a corporate member of UPE.',
+  //     'facebook': '',
+  //     "twitter": '',
+  //     "linkedIn": ''
+  //   },
+  //   {
+  //     'id': '2',
+  //     'name': 'MRS. NAMULI ANNET',
+  //     'title': 'K-HUMAN RESOURCE MANAGER',
+  //     'image': '/images/team/IMG_1960.jpg',
+  //     'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
+  //     'facebook': '',
+  //     "twitter": '',
+  //     "linkedIn": ''
+  //   },
+  //   {
+  //     'id': '2',
+  //     'name': 'KASAJJA CHRISTOPHER',
+  //     'title': 'OPERATIONS MANAGER',
+  //     'image': '/images/team/IMG_1994.jpg',
+  //     'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
+  //     'facebook': '',
+  //     "twitter": '',
+  //     "linkedIn": ''
+  //   },
+  //   {
+  //     'id': '2',
+  //     'name': 'MR. TISHEKWA SAM',
+  //     'title': 'ACCOUNTS MANAGER',
+  //     'image': '/images/team/sam.jpg',
+  //     'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
+  //     'facebook': '',
+  //     "twitter": '',
+  //     "linkedIn": ''
+  //   },
+  //   {
+  //     'id': '2',
+  //     'name': 'MITCHELL ACIRO',
+  //     'title': 'HEALTH AND SAFETY OFFICER',
+  //     'image': '/images/team/IMG_2002.jpg',
+  //     'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
+  //     'facebook': '',
+  //     "twitter": '',
+  //     "linkedIn": ''
+  //   },
+  //   {
+  //     'id': '2',
+  //     'name': 'MR. NAMUTETE PIUS',
+  //     'title': 'ENGINEERING OFFICER',
+  //     'image': '/images/team/IMG_2009.jpg',
+  //     'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
+  //     'facebook': '',
+  //     "twitter": '',
+  //     "linkedIn": ''
+  //   },
+  //   {
+  //     'id': '2',
+  //     'name': 'MR. GUMUSIRIZA MARTIN',
+  //     'title': 'ENGINEERING OFFICER',
+  //     'image': '/images/team/IMG_2189.jpg',
+  //     'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
+  //     'facebook': '',
+  //     "twitter": '',
+  //     "linkedIn": ''
+  //   },
+  //   {
+  //     'id': '2',
+  //     'name': 'MR. NDASE CHARLES',
+  //     'title': 'SURVEYING OFFICER',
+  //     'image': '/images/team/IMG_2193.jpg',
+  //     'description': `An experienced engineer with expertise in road construction, maintenance, and upgrading projects, including bituminous standards, drainage systems, and community infrastructure. Successfully managed projects for UNRA, schools, hospitals, and market construction, showcasing strong capabilities in urban and rural development.`,
+  //     'facebook': '',
+  //     "twitter": '',
+  //     "linkedIn": ''
+  //   },
     
-  ]
+  // ]
   return (
     <div>
       <div>
@@ -189,12 +189,12 @@ function AboutScreen() {
 
                     <div className="grid lg:gap-x-12 md:grid-cols-4">
                       <div className="mb-12 md:mb-0">
-                        <h2 className="text-3xl font-bold text-primary mb-4">67</h2>
+                        <h2 className="text-3xl font-bold text-primary mb-4">{complete}</h2>
                         <h5 className="text-lg font-medium text-gray-500 mb-0">Complete Projects</h5>
                       </div>
 
                       <div className="">
-                        <h2 className="text-3xl font-bold text-primary mb-4">08</h2>
+                        <h2 className="text-3xl font-bold text-primary mb-4">{ongoing}</h2>
                         <h5 className="text-lg font-medium text-gray-500 mb-0">Ongoing Projects</h5>
                       </div>
 
@@ -204,7 +204,7 @@ function AboutScreen() {
                       </div>
 
                       <div className="mb-12 md:mb-0">
-                        <h2 className="text-3xl font-bold text-primary mb-4">164</h2>
+                        <h2 className="text-3xl font-bold text-primary mb-4">{employees.length}</h2>
                         <h5 className="text-lg font-medium text-gray-500 mb-0">Staff</h5>
                       </div>
 
@@ -227,7 +227,10 @@ function AboutScreen() {
     <div className="container px-6 py-12 mx-auto">
 
         <div className="grid grid-cols-1 gap-8 mt-8 lg:mt-8 md:grid-cols-2 xl:grid-cols-3">
-            <div>
+
+          {
+            faqs && faqs.map((faq)=>(
+              <div>
                 <div className="inline-block p-3 text-white bg-primary rounded-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -235,93 +238,18 @@ function AboutScreen() {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700">What services does Kiru General Services Ltd offer?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700">{faq.question}</h1>
 
                     <p className="mt-2 text-sm text-gray-500">
-                        Kiru General Services Ltd specializes in road construction, building projects, and waterworks, delivering reliable and high-quality engineering solutions across Uganda.
+                        {faq.answer}
                     </p>
                 </div>
             </div>
+            ))
+          }
+            
 
-            <div>
-                <div className="inline-block p-3 text-white bg-primary rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>
-
-                <div>
-                    <h1 className="text-xl font-semibold text-gray-700">Does Kiru General Services Ltd handle large-scale projects?</h1>
-
-                    <p className="mt-2 text-sm text-gray-500">
-                        Yes, we have extensive experience managing both large-scale and community-level infrastructure projects, ensuring quality and timely delivery.
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <div className="inline-block p-3 text-white bg-primary rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>
-
-                <div>
-                    <h1 className="text-xl font-semibold text-gray-700">Can Kiru General Services Ltd assist with project design?</h1>
-
-                    <p className="mt-2 text-sm text-gray-500">
-                        Absolutely! We provide design and build services, including tailored project designs to meet your specific needs and requirements.
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <div className="inline-block p-3 text-white bg-primary rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>
-
-                <div>
-                    <h1 className="text-xl font-semibold text-gray-700">What regions in Uganda do you operate in?</h1>
-
-                    <p className="mt-2 text-sm text-gray-500">
-                        Kiru General Services Ltd operates nationwide, serving urban and rural areas with comprehensive construction solutions.
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <div className="inline-block p-3 text-white bg-primary rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>
-
-                <div>
-                    <h1 className="text-xl font-semibold text-gray-700">How do I request a quote for a project?</h1>
-
-                    <p className="mt-2 text-sm text-gray-500">
-                        You can request a quote by contacting us through our website, email, or phone. Provide your project details, and our team will get back to you promptly.
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <div className="inline-block p-3 text-white bg-primary rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>
-
-                <div>
-                    <h1 className="text-xl font-semibold text-gray-700">What sets Kiru General Services apart from other companies?</h1>
-
-                    <p className="mt-2 text-sm text-gray-500">
-                        Our commitment to quality, reliability, and client satisfaction, combined with our skilled team and state-of-the-art technology, sets us apart in the construction industry.
-                    </p>
-                </div>
-            </div>
+           
         </div>
     </div>
 </section>
@@ -408,7 +336,7 @@ function AboutScreen() {
                       Email
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      info@kiru.co.ug
+                      info@kirugeneralservices.co.ug
                     </dd>
                   </div>
                 </div>
@@ -431,8 +359,7 @@ function AboutScreen() {
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
                       Monday -  Friday: 9am to 5pm<br />
-                      Saturday - 10am to 5pm<br />
-                      Sunday -  10am to 3pm
+                      
                     </dd>
                   </div>
                 </div>

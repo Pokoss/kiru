@@ -23,7 +23,7 @@ class ProjectController extends Controller
     public function viewProjects()
     {
         //
-        $projects = Project::latest()->paginate(10);
+        $projects = Project::latest()->paginate(20);
         
         return Inertia::render('ProjectlistScreen',['projects'=> $projects]);
     }

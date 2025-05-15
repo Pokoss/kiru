@@ -105,7 +105,7 @@ function ProjectDetailsScreen({project}) {
                 <aside className="w-full md:w-1/3 flex flex-col items-center px-3">
                     <div className="w-full bg-white shadow flex flex-col my-4 p-6">
                         <p className="text-xl font-semibold pb-5">Contact us</p>
-                        <p className="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias placeat exercitationem assumenda neque odit laboriosam, maxime debitis laudantium totam hic voluptatum natus corporis ducimus? Nisi ullam cum minus placeat omnis.</p>
+                        <p className="pb-2"> If you want to have such a project implimented, please contact us on our phone number or email. We will be happy to answer any inquiries you might have.</p>
 
                             <div className="mb-3 flex gap-3">
                                 <button  className='w-full bg-primary text-white font-bold text-sm uppercase rounded hover:bg-yellow-700 flex items-center justify-center px-2 py-3 mt-4' variant="gradient">
